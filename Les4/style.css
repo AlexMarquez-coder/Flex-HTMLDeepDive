@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+}
+
+#fotoslider {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    /* ANDERE REGELS GEWOON LATEN STAAN! */
+    transition-property: left;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+}
+
+.foto {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#viewport {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    width: 400px;
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#controls {
+    padding: 40px;
+}
+
+#vorige-btn {
+    background-color: lightsteelblue; 
+    border: 5px solid steelblue;
+    color: steelblue;
+    padding-top: none;
+    font-size: 20px;
+}
+#volgende-btn {
+    background-color: lightsteelblue; 
+    border: 5px solid steelblue;
+    color: steelblue;
+    padding-top: none;
+    font-size: 20px;
+}
+
+
+#fotosliderencontrols {
+background-color: aquamarine;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 50px;
+}
+
